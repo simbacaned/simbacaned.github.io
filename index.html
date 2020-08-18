@@ -1884,7 +1884,6 @@
 			ctx.fillText(money,880,55)
 			//towers bases when pickup
 			if(pickup==1){
-				ctx.drawImage(TC,mouseX-30,mouseY-30,ts,ts)
 				if(tier==1){
 					ctx.drawImage(base1,mouseX-30,mouseY-30,ts,ts)
 				}
@@ -1897,6 +1896,7 @@
 				if(tier==5){
 					ctx.drawImage(base5,mouseX-30,mouseY-30,ts,ts)
 				}
+				ctx.drawImage(TC,mouseX-30,mouseY-30,ts,ts)
 			}
 			//towers
 			ctx.drawImage(base1,820,148,ts,ts)
