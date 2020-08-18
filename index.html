@@ -1593,6 +1593,7 @@
 				ctx.drawImage(towers[i].TC,-ts/2,-ts/2,ts,ts)
 				ctx.rotate(towers[i].angle * ( -1 ) );
 				ctx.translate((towers[i].x+ts/2) * (-1), (towers[i].y+ts/2) * (-1));
+				//render bases for towers
 				if(towers[i].tier==1){
 					ctx.drawImage(base1,towers[i].x,towers[i].y,ts,ts)
 				}
@@ -1893,6 +1894,18 @@
 			ctx.drawImage(bank,920,294,ts,ts)
 			if(pickup==1){
 				ctx.drawImage(TC,mouseX-30,mouseY-30,ts,ts)
+				if(tier==1){
+					ctx.drawImage(base1,mouseX-30,mouseY-30,ts,ts)
+				}
+				if(tier==2){
+					ctx.drawImage(base2,mouseX-30,mouseY-30,ts,ts)
+				}
+				if(tier==4){
+					ctx.drawImage(base4,mouseX-30,mouseY-30,ts,ts)
+				}
+				if(tier==5){
+					ctx.drawImage(base5,mouseX-30,mouseY-30,ts,ts)
+				}
 			}
 			ctx.drawImage(bottom,0,800,800,100)
 			ctx.font="22px serif"
